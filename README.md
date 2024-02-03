@@ -12,10 +12,10 @@
 ## Method
     Get all tasks
       curl: http://localhost:8080/tasks (GET)
+      
     Create a task
       curl http://localhost:8080/tasks (POST)
       payload: 
-      
         {
             "id":"testid",
             "name":"testname",
@@ -26,13 +26,11 @@
     Update a task
       curl http://localhost:8080/tasks/testid (PUT)
       payload: 
-      
         {
             "name":"testname",
             "status":1,
             "memo":"done"
         }
-      
 
     Delete a task
       curl http://localhost:8080/tasks/testid (DELETE)
